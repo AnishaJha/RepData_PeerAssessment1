@@ -53,8 +53,7 @@ mean_steps<-mean(act_data_summary$steps,na.rm=TRUE)
 median_steps<-median(act_data_summary$steps,na.rm=TRUE)
 ```
 
-**The mean steps per day is 9354.2295 and the median steps per day is 10395 **
-
+The mean steps per day is 9354.2295 and the median steps per day is 10395
 
 ## What is the average daily activity pattern?
 
@@ -75,7 +74,7 @@ plot(act_data_summary$interval,act_data_summary$steps,type="l",main="Average dai
 max_interval<-act_data_summary$interval[act_data_summary$steps==max(act_data_summary$steps)]
 ```
 
-**The interval with maximum steps per day is 835 **
+The interval with maximum steps per day is 835
 
 ## Inputing missing values
 
@@ -98,7 +97,7 @@ head(act_data)
 num_steps_NA <- length(which(is.na(act_data$steps)))
 ```
 
-**The number of steps with Na values is 2304 **
+The number of steps with Na values is 2304
 
 
 ```r
@@ -130,7 +129,8 @@ mean_steps<-mean(act_data_clean_summary$steps,na.rm=TRUE)
 median_steps<-median(act_data_clean_summary$steps,na.rm=TRUE)
 ```
 
-**The mean steps per day is 9354.2295 and the median steps per day is 1.0395 &times; 10<sup>4</sup> **
+The mean steps per day is 9354.2295 and the median steps per day is 1.0395 &times; 10<sup>4</sup>
+
 **We observe that the estimates do not differ much from the first part of the Assignment because we took the mean steps in case of missing values** 
 
 ## Are there differences in activity patterns between weekdays and weekends?
